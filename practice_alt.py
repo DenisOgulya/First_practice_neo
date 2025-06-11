@@ -53,3 +53,8 @@ for i in range(7):
 # money_spend_during_the_week.append(try_getting_number_from_user("Please enter budget for the Wednesday: "))
 
 print(money_spend_during_the_week)
+
+sum_of_spending = sum(money_spend_during_the_week)
+print(f'Money_spend_during_the_week = {sum_of_spending}')
+
+print(f'Difference = {weekly_budget - sum_of_spending}')
