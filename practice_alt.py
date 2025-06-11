@@ -21,8 +21,8 @@ print("end of programm")
 # print("end of programm")
 
 
-# weekly_budget = try_getting_number_from_user("Please enter budget for the week: ")
-# print(f"Budget for the week is: {weekly_budget}")
+weekly_budget = try_getting_number_from_user("Please enter budget for the week: ")
+print(f"Budget for the week is: {weekly_budget}")
 # #Monday
 # monday_spend = try_getting_number_from_user("Please enter budget for the Monday: ")
 # print(f'Budget for the Monday is: {monday_spend}')
@@ -34,12 +34,22 @@ print("end of programm")
 # wednesday_spend = try_getting_number_from_user("Please enter budget for the Wednesday: ")
 # print(f'Budget for the Monday is: {wednesday_spend}')
 
+weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Suturday', 'Sunday']
+
 money_spend_during_the_week = []
-#Monday
-money_spend_during_the_week.append(try_getting_number_from_user("Please enter budget for the Monday: "))
-#Tuesday
-money_spend_during_the_week.append(try_getting_number_from_user("Please enter budget for the Tusday: "))
-#Wednesday
-money_spend_during_the_week.append(try_getting_number_from_user("Please enter budget for the Wednesday: "))
+
+for i in range(7):
+    day = weekdays[i]
+    money_spend_during_the_week.append(try_getting_number_from_user(f"Please enter budget for the {day}: "))
+
+    
+
+
+# #Monday
+# money_spend_during_the_week.append(try_getting_number_from_user("Please enter budget for the Monday: "))
+# #Tuesday
+# money_spend_during_the_week.append(try_getting_number_from_user("Please enter budget for the Tusday: "))
+# #Wednesday
+# money_spend_during_the_week.append(try_getting_number_from_user("Please enter budget for the Wednesday: "))
 
 print(money_spend_during_the_week)
